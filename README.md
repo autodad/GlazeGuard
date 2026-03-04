@@ -72,3 +72,16 @@ In all three panels, leader lines point to the following components:
     Distilled Water (Phase-Change Medium) (The water)
 
     TPU Encapsulation (The capsule)
+
+## Prototyping & Current Development
+
+### Hybrid Actuator Design (V1.1)
+To simplify early prototyping, we are exploring a Hybrid Membrane approach. By embedding a rigid, broad-headed metal component (similar to a thumbtack) into a bistable polymer membrane, we achieve:
+
+*   **Optimized Force Transfer:** The broad "hat" collects the 9% expansion force from the NC-Ice across the entire chamber diameter.
+
+*   **Puncture Protection:** The rigid head acts as a shield, preventing the traction stud from piercing the internal pressure chamber.
+
+*   **Bistable Feedback:** The polymer surround provides the elastic "snap" required for clear ON/OFF states.
+
+See `PROTOTYPING_HACKS.md` for more details on this community-focused approach.
