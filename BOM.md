@@ -28,7 +28,3 @@ Item	            Description	                    Source / Suggestion
 Thermal Source	    Standard Freezer	            Needs to reach -18°C for rapid testing.
 Force Gauge	        Digital Luggage Scale	        To measure the Buckling Point (Pcr​) in kg/N.
 Calipers	        Digital Caliper	                To measure the 9% expansion displacement.
-
-
-# Implementation Note for Developers
-To keep the first prototype simple, the Lower Housing can be 3D-printed in a cup-shape. After filling it with the NC-water mixture, the Bistable Diaphragm should be glued directly to the rim to create a hermetic seal before attaching the Buckling Column and Stud.
