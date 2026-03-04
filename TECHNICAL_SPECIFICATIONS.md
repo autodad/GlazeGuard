@@ -1,4 +1,4 @@
-# Technical Specifications (Design Target V1.1)
+# Technical Specifications (Design Target v0.2)
 
 This document outlines the target engineering parameters for the GlazeGuard PCPT (Phase-Change Power Traction) cells. These specifications are based on a design optimized for manufacturability, sole flexibility, and rapid thermal response.
 
@@ -6,7 +6,8 @@ This document outlines the target engineering parameters for the GlazeGuard PCPT
 *   **Cell Geometry:** Lenticular (Low-Profile, lens-shaped).
 *   **Cell Diameter:** ~12 mm.
 *   **Cell Depth:** ~4 mm.
-*   **Housing Strategy:** Cells are integrated directly into a hexagonal (honeycomb) matrix within the TPU/rubber sole, using the sole itself as structural reinforcement.
+*   **Housing Strategy:** A rigid honeycomb frame (e.g., PET-G, ASA) provides structural integrity against walking pressure. Individual, sealed TPU actuator pods are inserted into this frame. The entire assembly is then overmolded into the final sole material.
+*   **Thermal Isolation:** An insulating layer must be integrated between the PCPT cell matrix and the user's foot to prevent body heat from interfering with activation.
 
 ## Actuation Fluid
 *   **Medium:** Distilled Water with 1-3% Nanocellulose (NC-Ice).

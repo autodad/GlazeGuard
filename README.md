@@ -1,4 +1,6 @@
 # GlazeGuard - Adaptive Open Source Traction
+**Current Version: v0.1.1 (Alpha)**
+
 An intelligent, passive footwear system designed to prevent slip-and-fall injuries.
 
 ## Background
@@ -11,6 +13,13 @@ This project is licensed under the **CERN Open Hardware Licence Version 2 - Stro
 Our goal is to establish "Prior Art" and ensure this life-saving technology remains accessible to all, preventing restrictive patenting. By using a strong reciprocal license, we ensure that any improvements or modifications to the design also remain open and available to the community.
 
 You can find the full license text in the `LICENSE` file in the root of this repository.
+
+## Versioning
+This project follows a semantic versioning-like approach (`MAJOR.MINOR.PATCH`).
+*   **`v0.x.x`**: Pre-release, development, and prototyping phase.
+*   **`v1.0.0`**: First stable, field-tested public release.
+
+The version numbers like `v0.1`, `v0.2` etc. used in the documentation refer to specific design iterations or concepts, not the overall project version.
 
 ## Project Documentation
 Dive deeper into the engineering behind GlazeGuard:
@@ -75,7 +84,7 @@ In all three panels, leader lines point to the following components:
 
 ## Prototyping & Current Development
 
-### Hybrid Actuator Design (V1.1)
+### Hybrid Actuator Design (v0.2 Concept)
 To simplify early prototyping, we are exploring a Hybrid Membrane approach. By embedding a rigid, broad-headed metal component (similar to a thumbtack) into a bistable polymer membrane, we achieve:
 
 *   **Optimized Force Transfer:** The broad "hat" collects the 9% expansion force from the NC-Ice across the entire chamber diameter.

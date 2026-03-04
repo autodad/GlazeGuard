@@ -1,4 +1,4 @@
-Bill of Materials (BOM): GlazeGuard Prototype V1.0
+Bill of Materials (BOM): GlazeGuard Prototype v0.1
 
 This list covers the components required to build and test a single PCPT (Phase-Change Power Traction) unit.
 
