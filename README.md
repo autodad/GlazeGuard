@@ -23,6 +23,7 @@ Dive deeper into the engineering behind GlazeGuard:
 *   **Roadmap / TODO:** Current status and next steps.
 
 ## Simple illustration of concept
+```text
 STAGE 1: WARM (>0°C)      STAGE 2: COLD (ICE)       STAGE 3: COLD (HARD FLOOR)
       [ Rubber ]                [ Rubber ]                [ Rubber ]
       |        |                |        |                |        |
@@ -33,6 +34,7 @@ STAGE 1: WARM (>0°C)      STAGE 2: COLD (ICE)       STAGE 3: COLD (HARD FLOOR)
          [__]   <-- Retracted      [__]   <-- Deployed     [__]     <-- Recessed
       ----------                --/----\--                ----------
       (Asphalt)                    (Ice)                  (Hard Floor)
+```
 
 Panel 1: "WARM STATE" (>0°C)
 
