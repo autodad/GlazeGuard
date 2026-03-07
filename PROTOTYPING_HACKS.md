@@ -54,6 +54,20 @@ These hold the water and the mechanism. They must be watertight and elastic.
     *   **Infill:** **100%** for the "Injection Port" (Septum) area. **0% (Hollow)** for the water chamber.
     *   **Speed:** Print slowly (15-30 mm/s) to ensure watertight layer bonding.
 
+### 2.1. The "Slicer Hack" (Advanced Infill Strategy)
+Instead of modeling a hollow chamber which requires difficult internal supports, you can model a solid block and use the Slicer to generate the internal structure.
+
+*   **The Concept:** Use the Infill as the return spring.
+*   **Recommended Pattern:** **Gyroid**.
+    *   *Why?* Gyroid is fully permeable (fluid flows through it easily) and acts as an isotropic spring.
+*   **Settings:**
+    *   **Infill Density:** 10-15% (Creates volume for water while providing structural rebound).
+    *   **Walls:** Thick (1.5mm+) to prevent bulging.
+*   **The Injection Port (Septum):**
+    *   Since the cell is mostly hollow, you must use a **Modifier Mesh** in your slicer (e.g., Cura "Per Model Settings").
+    *   Place a small cylinder intersecting the wall.
+    *   Set this modifier to **100% Infill**. This creates a solid rubber block to pierce with a needle for filling.
+
 ### 3. Mounting to a Shoe
 For non-destructive testing:
 *   **Adhesive:** Contact cement (e.g., Barge) allows for a strong bond that can be peeled off later.
@@ -66,20 +80,20 @@ For non-destructive testing:
 This list contains key variables for building a parametric CAD model in FreeCAD's Spreadsheet Workbench. This allows for rapid design changes by modifying a single source of truth.
 
 ```text
-| Alias (Variabelnamn)      | Värde | Enhet | Beskrivning                                                              |
+| Alias (Variable Name)     | Value | Unit  | Description                                                              |
 |---------------------------|-------|-------|--------------------------------------------------------------------------|
-| `pCellDiameter`           | 12    | mm    | Ytterdiametern på en enskild, flexibel TPU-actuator-pod.                   |
-| `pCellDepth`              | 4     | mm    | Totala djupet/höjden på TPU-podden.                                        |
-| `pTargetStroke`           | 2     | mm    | Målsatt utskjutningslängd för dubben vid aktivering.                       |
-| `pFrameWall`              | 1.5   | mm    | Väggtjockleken på den styva honeycomb-ramen (PET-G/ASA).                   |
-| `pPodWall`                | 1.0   | mm    | Väggtjockleken på den flexibla TPU-podden.                                 |
-| `pInsulationLayer`        | 1.0   | mm    | Tjockleken på värmeisoleringsskiktet mot foten.                            |
-| `pTackHeadDiameter`       | 10    | mm    | Diametern på huvudet av häftstiftet som används som "anvil".               |
-| `pTackHeadThickness`      | 0.5   | mm    | Uppskattad tjocklek på metallen i häftstiftets huvud.                      |
-| `pTackNeedleLength`       | 3.5   | mm    | Den förkortade längden på häftstiftets nål (dubben).                       |
-| `pSeptumDiameter`         | 3     | mm    | Diametern på den självläkande injektionsporten (septum).                    |
-| `pSeptumHeight`           | 4     | mm    | Höjden på injektionsporten (samma som `pCellDepth`).                       |
-| `pClearance`              | 0.2   | mm    | Generellt spel mellan den styva ramen och TPU-podden för enkel montering. |
+| `pCellDiameter`           | 12    | mm    | Outer diameter of a single, flexible TPU actuator pod.                   |
+| `pCellDepth`              | 4     | mm    | Total depth/height of the TPU pod.                                       |
+| `pTargetStroke`           | 2     | mm    | Target stroke length for the stud upon activation.                       |
+| `pFrameWall`              | 1.5   | mm    | Wall thickness of the rigid honeycomb frame (PET-G/ASA).                 |
+| `pPodWall`                | 1.0   | mm    | Wall thickness of the flexible TPU pod.                                  |
+| `pInsulationLayer`        | 1.0   | mm    | Thickness of the thermal insulation layer against the foot.              |
+| `pTackHeadDiameter`       | 10    | mm    | Diameter of the thumbtack head used as the "anvil".                      |
+| `pTackHeadThickness`      | 0.5   | mm    | Estimated thickness of the metal in the thumbtack head.                  |
+| `pTackNeedleLength`       | 3.5   | mm    | The shortened length of the thumbtack needle (the stud).                 |
+| `pSeptumDiameter`         | 3     | mm    | Diameter of the self-healing injection port (septum).                    |
+| `pSeptumHeight`           | 4     | mm    | Height of the injection port (same as `pCellDepth`).                     |
+| `pClearance`              | 0.2   | mm    | General clearance between the rigid frame and the TPU pod for easy assembly. |
 ```
 
 ### How to use in FreeCAD:
